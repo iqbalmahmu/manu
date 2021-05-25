@@ -9,3 +9,62 @@
   width: 876px;
   background: gray;
 }
+
+nav {
+  background: rgb(66, 137, 231);
+  display: block;
+  /* padding: 20px 0; */
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: block;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+  /* visibility: hidden; */
+}
+
+nav ul li:first-child:hover {
+  background: rgb(98, 51, 228);
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  padding: 25px;
+  font-size: 20px;
+}
+nav ul li a:hover {
+  background: rgb(98, 51, 228);
+  display: block;
+  /* visibility: visible; */
+}
+
+/* dropdown css */
+
+nav ul li ul {
+  display: block;
+  position: absolute;
+  background: rgb(66, 137, 231);
+  /* padding: 60px; */
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.42s;
+  top: 100%;
+}
+
+nav ul li:hover ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+nav ul li ul li {
+  /* transition: ; */
+}
+
+nav ul li ul li a:hover {
+}
